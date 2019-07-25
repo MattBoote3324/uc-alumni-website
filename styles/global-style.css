@@ -1,0 +1,362 @@
+﻿/* Whole Page Styling */
+body {
+    background-color: #E8E8E8;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-grey {
+    background-color: #F5F5F5;
+}
+
+.no-padding {
+    padding-left: 0px; 
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.lrg-text {
+    font-size: 1.2em;
+}
+
+.justified {
+	text-align: justify;
+}
+
+.container-fluid{
+    margin: 0 auto;
+}
+
+/* Global Banner */
+#banner {
+    background-color: #CC0011;
+    border-radius: 0px;
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+#banner-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner-logo {
+    margin: 14px;
+    margin-left: 1.5em;
+    max-width: 20%;
+}
+
+#banner-heading {
+    margin-right: 21px;
+    height: 100%;
+    color: #FFFFFF;
+    font-family: serif;
+    font-size: 3em;
+    text-align: right;
+}
+
+/*Navbar Styling*/
+/* Side Menu */
+.title {
+    background: #E8E8E8;
+    color : #000000;
+    font-weight: bold;
+}
+
+a.list-group-item-success, button.list-group-item-success {
+   color : #000000;
+
+}
+
+a.list-group-item-success:focus {
+    background: #E8E8E8;
+    color : #000000;
+    font-weight: bold;
+}
+
+ a.list-group-item-success:hover {
+     color : #CC0011;
+     background-color: #E8E8E8;
+ }
+
+.reduce-width {
+    width : 90%;
+    float : left;
+}
+
+.collapse {
+    background : #FFFFFF;
+}
+
+.sm-padding-left {
+    padding-left : 2.6em;
+}
+
+.glyphicon {
+    right : 1px;
+}
+
+.menu-btn-bar {
+    background-color: #CC0011;
+}
+
+#nav-image {
+    height : 30px;
+    width : 50px;
+
+}
+
+/*sub menu styling*/
+.sub-menu.list-group-item:hover {  
+
+    color: #CC0011;
+}
+
+.navbar-header {
+    width : 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #E8E8E8;
+}
+
+#MainMenu {
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding:0px;
+    border-top-width: 0px;
+    border-width: 0px;
+    overflow-x: hidden;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.responsive-nav {
+    padding: 0px;
+}
+
+div.list-group.panel {
+    border-width: 0px;
+}
+
+.menu-btn {
+   top: 7px;
+   margin-right : 1.5em;
+   padding-right: 0px;
+}
+
+.navbar-brand {
+    float : left;
+    margin-left : 1.5em;
+}
+
+.panel {
+    margin-bottom: 0px;
+}
+
+#content-container {
+    margin-top:0px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+
+/*Collapsing the navbar on a medium device*/
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-nav {
+        float: none;
+		margin-top: 7.5px;
+	}
+
+	.navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in{
+  		display:block;
+	}
+}
+
+/*FOOTER STYLING*/
+/*
+// UC Footer
+// --------------------------------------------------
+*/
+
+footer, footer li {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.4;
+  font-size: 1.4rem;
+  font-size: 14px;
+}
+
+footer ul {
+  margin-bottom: 10px;
+  padding-left: 0px;
+}
+
+footer {
+  display: block;
+  position: relative;
+  background: #292929;
+}
+
+footer:before {
+  background: rgba(0, 0, 0, 0) url("../img/shared/kowhaiwhai-white-small.png") repeat scroll 0 0 / 100px auto;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0.04;
+}
+
+footer a,
+footer a:visited {
+  color: #FFFFFF;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer img {
+	max-width: 100%;
+}
+
+footer h3 {
+	border-bottom: 1px solid #BAC1C8;
+	color: #54697E;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	padding: 40px 0 10px;
+	text-transform: uppercase;
+}
+
+footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+
+footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+
+footer h2{
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    color: #CC0011;
+    text-decoration: none;
+}
+
+footer p{
+    color : #FFFFFF;
+}
+
+.social li{
+	background: none repeat scroll 0 0 transparent;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 42px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+  	vertical-align: middle;
+	text-align: center;
+	width: 39px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+
+.social-icon{
+  height: 32px;
+  width: 32px;
+}
+
+.social-icon:hover{
+  height: 32px;
+  width: 32px;
+  color: #CC0011;
+}
+
+.social li a {
+	color: #EDEFF1;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Only used for the home page footer as already using flex container*/
+.flex-container-home {
+    display: flex;
+    justify-content: center;
+}
+
+#copyright-container li{
+    display: inline;
+}
+
+#copyright-container ul{
+    text-align: center;
+}
+
+#copyright-container a{
+    display: inline;
+}
+.links{
+    float: left;
+}
+#copyright-text{
+    color: #FFFFFF;
+}

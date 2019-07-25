@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <!-- Page title and metadata tags -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>University of Canterbury Alumni Contact Us</title>
+    <meta name="description" content="Find out about the alumni department at the
+        University of Canterbury and how to contact us." />
+    <meta name="keywords" content="University of Canterbury, UC Alumni Department, UC Alumni, Contact, Alumni" />
+
+    <!-- Link to JQuery -->
+    <script type = "text/javascript"  src="scripts/jquery-3.1.0.min.js"></script>
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <script type = "text/javascript"  src="scripts/bootstrap.min.js"></script>
+
+    <!-- Link to our stylesheeCSS and JS -->
+    <link rel="stylesheet" type="text/css" href="styles/global-style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contact-us.css" />
+    <script type = "text/javascript"  src="scripts/form-validation.js"></script>
+</head>
+
+<body>
+    <!-- Banner -->
+	<div class="panel panel-default" id="banner">
+		<div id="banner-content">
+			<img id="banner-logo" src="img/shared/uc-banner-logo.png" alt="University of Canterbury" />
+			<h1 id="banner-heading">About Us</h1>
+		</div>
+	</div>
+    <!-- Navbar -->
+    <div class="container" id="content-container">
+        <div class="row">
+            <!-- Side Menu Column -->
+            <div class="col-lg-2 col-md-12 col-sm-12 responsive-nav">
+                <!-- Menu Header, Only visible when collapsed -->
+                <div id="nav-container">
+                    <div class="navbar-header list-group-item-success">
+                        <button type="button" class="navbar-toggle menu-btn" data-toggle="collapse" data-target="#MainMenu">
+                            <span class="icon-bar menu-btn-bar"></span>
+                            <span class="icon-bar menu-btn-bar"></span>
+                            <span class="icon-bar menu-btn-bar"></span>
+                        </button>
+
+                        <div class = "navbar-toggle navbar-brand">
+                            <img id = "nav-image" src = "img/shared/uc-alumni-logo-red.png"/>
+                        </div>
+                    </div>
+                </div>
+                <!--What we see when on large device-->
+                <div class="side-nav collapse navbar-collapse" id="MainMenu">
+                    <div class="list-group panel">
+                        <a href="home.html" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Home</a>
+
+                        <a href="events.html" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Events</a>
+
+                        <a href="#nav-benefits" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">Benefits</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-benefits">
+                            <a href="benefits.html" class="sub-menu list-group-item sm-padding-left">Networks</a>
+                            <a href="benefits.html#publications" class="sub-menu list-group-item sm-padding-left">Publications</a>
+                            <a href="benefits.html#gifts-div" class="sub-menu list-group-item sm-padding-left">Gifts and Memorabilia</a>
+                            <a href="benefits.html#memberships" class="sub-menu list-group-item sm-padding-left">Memberships</a>
+                        </div>
+
+                        <a href="#nav-worldwide" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">Alumni Worldwide</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-worldwide">
+                            <a href="worldwide.html" class="sub-menu list-group-item sm-padding-left">Where Are They Now?</a>
+                            <a href="worldwide.html#uc-legends" class="sub-menu list-group-item sm-padding-left">UC Legends</a>
+                        </div>
+
+                        <a href="#nav-about-us" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">About Us</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-about-us">
+                            <a href="about.html" class="sub-menu list-group-item sm-padding-left">Our Mission</a>
+                            <a href="about.html#team-section" class="sub-menu list-group-item sm-padding-left">Our Team</a>
+                            <a href="about.html#faq-section" class="sub-menu list-group-item sm-padding-left">FAQ</a>
+                            <a href="about.html#contact-section" class="sub-menu list-group-item sm-padding-left">Contact Us</a>
+                            <a href="about.html#find-us-section" class="sub-menu list-group-item sm-padding-left">Find Us</a>
+                        </div>
+
+                        <a href="login.php" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Login</a>
+
+                        <a href="portal.php" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Alumni Portal</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <div class="col-lg-10 col-md-12 col-sm-12 no-padding">
+                <div id="about-section">
+                    <div class="bg-grey">
+                        <div class="container" id="mission-section">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="mission-segment">
+                                        <h2>Our Mission</h2>
+                                        <div class="info-segment">
+                                            <p>
+                                                To build strong relationships and networks with University of Canterbury alumni and friends who can make a difference for
+                                                our university.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="mission-segment">
+                                        <h2>What We Do</h2>
+                                        <div class="info-segment">
+                                            <p>
+                                                UC is proud of its alumni and friends and we honour the achievements and accomplishments of the men and women who have studied
+                                                at the university. Building enduring relationships with our alumni and friends is vital for the future
+                                                of UC. We are committed to keeping alumni and friends connected to the university and to
+                                                each other.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="mission-segment">
+                                        <h2>Our Key Activites</h2>
+                                        <div class="info-segment">
+                                            <ul>
+                                                <li>Communicating with and helping alumni keep in touch with UC</li>
+                                                <li>Helping alumni build networks and connect with each other</li>
+                                                <li>Fostering philanthropic and other support for the university</li>
+                                                <li>Acknowledging and recognising donors and supporters</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white" id="team-section">
+                        <h2 class="page-heading">Our Team</h2>
+                        <p class="text-center lrg-text">
+                            Click on one of the teams images to find out how to contact them.
+                        </p>
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person0" data-toggle="collapse">
+                                        <img src="img/contact-us/dowling.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Jo Dowling</p>
+                                    <p>Director</p>
+                                    <div id="person0" class="collapse">
+                                        <p>Phone: <a href="tel:006433693542">+64 3 369 3542</a></p>
+                                        <p>Internal ext: <a href="tel:006433693452">93542</a></p>
+                                        <p>Mobile: <a href="tel:0064278366593">+64 27 836 6593</a></p>
+                                        <a href="mailto:jo.dowling@canterbury.ac.nz">jo.dowling@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person1" data-toggle="collapse">
+                                        <img src="img/contact-us/dench.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Sam Dench</p>
+                                    <p>Alumni Relations Coordinator</p>
+                                    <div id="person1" class="collapse">
+                                        <p>Phone: <a href="tel:00643369354">+64 3 369 3541</a></p>
+                                        <p>Internal ext: <a href="tel:006433693451">93541</a></p>
+                                        <p>Mobile: <a href="tel:0064275106523">+64 27 510 6523</a></p>
+                                        <a href="mailto:samantha.dench@canterbury.ac.nz">samantha.dench@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person2" data-toggle="collapse">
+                                        <img src="img/contact-us/partridge.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Leonie Partridge</p>
+                                    <p>Stewardship Coordinator</p>
+                                    <div id="person2" class="collapse">
+                                        <p>Phone: <a href="tel:006433693543">+64 3 369 3543</a></p>
+                                        <p>Internal ext: <a href="tel:006433693453">93543</a></p>
+                                        <p>Mobile: <a href="tel:0064274039589">+64 27 403 9589</a></p>
+                                        <a href="mailto:leonie.partridge@canterbury.ac.nz">leonie.partridge@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person3" data-toggle="collapse">
+                                        <img src="img/contact-us/ciaran.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Dr Fiona Ciaran</p>
+                                    <p>Senior Development Consultant</p>
+                                    <div id="person3" class="collapse">
+                                        <p>Phone: <a href="tel:006433693538">+64 3 369 3538</a></p>
+                                        <p>Internal ext: <a href="tel:006433693438">93538</a></p>
+                                        <p>Mobile: <a href="tel:0064277025768">+64 27 702 5768</a></p>
+                                        <a href="mailto:fiona.ciaran@canterbury.ac.nz">fiona.ciaran@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person4" data-toggle="collapse">
+                                        <img src="img/contact-us/wynen.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Meri Weynen</p>
+                                    <p>Development Consultant</p>
+                                    <div id="person4" class="collapse">
+                                        <p>Phone: <a href="tel:006433693545">+64 3 369 3545</a></p>
+                                        <p>Internal ext: <a href="tel:006433693445">93545</a></p>
+                                        <p>Mobile: <a href="tel:0064278366593">+64 27 406 0363</a></p>
+                                        <a href="mailto:meri.wynen@canterbury.ac.nz">meri.wynen@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person5" data-toggle="collapse">
+                                        <img src="img/contact-us/malin.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Kylie Malin</p>
+                                    <p>Annual Fund and Trust Officer</p>
+                                    <div id="person5" class="collapse">
+                                        <p>Phone: <a href="tel:006433693539">+64 3 369 3539</a></p>
+                                        <p>Internal ext: <a href="tel:006433693539">93539</a></p>
+                                        <p>Mobile: <a href="tel:0064278366593">+64 27 702 9738</a></p>
+                                        <a href="mailto:kylie.malin@canterbury.ac.nz">kylie.malin@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person6" data-toggle="collapse">
+                                        <img src="img/contact-us/polo.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Avan Polo</p>
+                                    <p>Auckland based Development Consultant</p>
+                                    <div id="person6" class="collapse">
+                                        <p>Phone: <a href="tel:006433693227">+64 3 369 3227</a></p>
+                                        <p>Internal ext: <a href="tel:006433693227">93227</a></p>
+                                        <p>Mobile: <a href="tel:0064276005159">+64 27 600 5159</a></p>
+                                        <a href="mailto:avan.polo@canterbury.ac.nz">avan.polo@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person7" data-toggle="collapse">
+                                        <img src="img/contact-us/ahern.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Maureen Ahern</p>
+                                    <p>Database Administrator</p>
+                                    <div id="person7" class="collapse">
+                                        <p>Phone: <a href="tel:006433693540">+64 3 369 3540</a></p>
+                                        <p>Internal ext: <a href="tel:006433693540">93540</a></p>
+                                        <a href="mailto:maureen.ahern@canterbury.ac.nz">maureen.ahern@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person8" data-toggle="collapse">
+                                        <img src="img/contact-us/sail.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Annie Sail</p>
+                                    <p>Accountant, UC Foundation</p>
+                                    <div id="person8" class="collapse">
+                                        <p>Phone: <a href="tel:006433693544">+64 3 369 3544</a></p>
+                                        <p>Internal ext: <a href="tel:006433693544">93544</a></p>
+                                        <a href="mailto:annie.sail@canterbury.ac.nz">annie.sail@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 person-thumbnail">
+                                    <a href="#person9" data-toggle="collapse">
+                                        <img src="img/contact-us/thompson.jpg" class="img-circle person img-responsive" alt="Placeholder Image"/>
+                                    </a>
+                                    <p>Wendy Thompson</p>
+                                    <p>Administrator</p>
+                                    <div id="person9" class="collapse">
+                                        <p>Phone: <a href="tel:006433693546">+64 3 369 3546</a></p>
+                                        <p>Internal ext: <a href="tel:006433693546">93546</a></p>
+                                        <a href="mailto:wendy.thompson@canterbury.ac.nz">wendy.thompson@canterbury.ac.nz</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id ="faq-section" class = "bg-grey">
+                    <h2 class="page-heading">Frequently Asked Questions</h2>
+                    <div class = "centerBlock">
+                        <img class = "img-responsive" src = "img/contact-us/question.png" id = "question"/>
+                    </div>
+                    <div class = "row centerBlock">
+                        <div class = "col-sm-12 faq-content">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            How do I get my University Transcript?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body"><p>You can find the information on the graduation website</p>
+                                            <a class="btn btn-default faq-button" href="http://www.canterbury.ac.nz/graduation/">Let's Go!</a>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                            Who do I contact to join the Alumni Association?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body"><p>As a UC Graduate, you are automatically one of our Alumni.
+                                            There is no need to join however we would like you to let us know your current postal and email address.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            How do I update my address details on the UC Alumni Database?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">You can send us your address update by email:
+                                            <a href="mailto:alumni@canterbury.ac.nz">alumni@canterbury.ac.nz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                            My UC friends get emails about events in their area however I don’t. How can I get updates about events?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="panel-body"><p>You need to ensure that we have your current address
+                                            and email by emailing us at: <a href="mailto:alumni@canterbury.ac.nz">alumni@canterbury.ac.nz</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                            I would like to talk about employment opportunities for UC Graduates.</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>You can contact the UC Careers, Internships & Employment
+                                                office through their website!
+                                            </p>
+                                            <a class="btn btn-default faq-button" href="http://www.canterbury.ac.nz/careers/">Let's Go!</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                            Where do I find out about postgraduate study at UC?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>You can find out about postgraduate study at UC
+                                                through the UC Postgraduate office!
+                                            </p>
+                                            <a class="btn btn-default faq-button" href="http://www.canterbury.ac.nz/postgraduate/uc-a-world-recognised-university/">Take me there!</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                            Where can I buy books produced by the Canterbury University Press?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>You can buy them here!</p>
+                                            <a class="btn btn-default faq-button" href="http://www.cup.canterbury.ac.nz/">Here!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                                            As a business and industry leader, how do I work with the University of Canterbury?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>You are able to gain access to some of the world’s great minds and contribute to ground breaking projects
+                                                and the education of future industry leader.
+                                                More information can be found here
+                                            </p>
+                                            <a class="btn btn-default faq-button" href="http://www.canterbury.ac.nz/business/">Let's Go!</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-section" class = "bg-white">
+                    <div>
+                        <h2 class="page-heading">Contact Us</h2>
+                        <p class="lrg-text text-center reduced-width">
+                            If you have any queries or concerns feel free to reach out to us via the form below. All information you submit will be handled in accordance
+                            with the University of Canterbury Privacy Policy, see the footer for more information.
+                        </p>
+
+
+                        <form id="contact-form" action = "email.php" method = "post" onsubmit= "return validateForm()">
+                            <div class= "form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name = "name"/>
+                                <label for="email">Email address:</label>
+                                <input type="text" class="form-control" id="email" name = "email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-input">Your Message:</label>
+                                <textarea  class="form-control" name  = "message" id="message-input" rows="5" cols ="1"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-default">Submit</button>
+                            </div>
+                        </form>
+
+                        <div class="bg-grey">
+                            <div id="find-us-section" class="reduced-width">
+                                <h2 class="text-center">Find Us</h2>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <div id="map" style="height:400px;width:100%;"></div>
+                                            <script type = "text/javascript" src="scripts/location-map.js"></script>
+                                            <!-- Link to Google Maps API -->
+                                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOXM6K1PpxFHGNa1OCULbRAY89NqfqUug&amp;callback=initMap" type="text/javascript"></script>
+                                        </div>
+                                        <div class="col-sm-3 text-center">
+                                            <h3>Our Address</h3>
+                                            <p>Okeover House</p>
+                                            <p>University Drive</p>
+                                            <p>Christchurch</p>
+
+                                            <h3>Mail</h3>
+                                            <p>University of Canterbury</p>
+                                            <p>Private Bag 4800</p>
+                                            <p>Christchurch 8140</p>
+                                            <p>New Zealand</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+</body>
+<footer>
+		<div class="row text-center container-fluid footer-content">
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Alumni</h2>
+					</li>
+					<li>
+						<h4><a href="home.html">Home</a></h4>
+					</li>
+					<li>
+						<h4><a href="benefits.html">Benefits</a></h4>
+					</li>
+					<li>
+						<h4><a href="events.html">Events</a></h4>
+					</li>
+					<li>
+						<h4><a href="worldwide.html">Worldwide</a></h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Useful Links</h2>
+					</li>
+					<li>
+						<h4><a href="http://www.canterbury.ac.nz/">University of Canterbury</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://library.canterbury.ac.nz/">Library</a></h4>
+					</li>
+					<li>
+						<h4><a href="https://www.keanewzealand.com/">KEA NZ</a></h4>
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2><a href="about.html">About Us</a></h2>
+					</li>
+					<li>
+						<h4><a href="about.html">What we do</a></h4>
+					</li>
+					<li>
+						<h4><a href="about.html#team-section">Our People</a></h4>
+					</li>
+					<li>
+						<h4><a href="about.html#contact-section">Contact Us</a></h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Stay in Touch</h2>
+					</li>
+					<li class="social-icons-li flex-container">
+						<ul class="social">
+							<li>
+								<a href="https://www.facebook.com/UCAlumniCommunity"><img class="social-icon" src="img/shared/facebook.png" alt="facebook-icon" /></a>
+								<i class=" fa fa-facebook"></i>
+							</li>
+							<li>
+								<a href="https://twitter.com/ucnz"><img class="social-icon" src="img/shared/twitter.png" alt="twitter-icon" /></a>
+                                <i class="fa fa-twitter"></i>
+                            </li>
+							<li>
+								<a href="https://www.youtube.com/user/UniversityCanterbury"><img class="social-icon" src="img/shared/youtube.png" alt="youtube-icon" /></a>
+                                <i class="fa fa-youtube"></i>
+                            </li>
+							<li>
+								<a href="http://www.linkedin.com/company/university-of-canterbury"><img class="social-icon" src="img/shared/linkedin.png" alt="linkedin-icon" /></a>
+                                <i class="fa fa-linkedin"></i>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id = "copyright-container">
+			<div class = "row">
+				<div class = "col-sm-6">
+					<ul>
+						<li id = "copyright-text">©University of Canterbury</li>
+					</ul>
+				</div>
+				<div class = "col-sm-6">
+					<ul class = "links">
+						<li><a href = "http://www.canterbury.ac.nz/help/legal.shtml">Copyright and Disclaimer</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/privacy/">Privacy</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/contact/">Feedback</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/">Help and Accessibility</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/a-z.shtml">A-Z of University Websites</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>

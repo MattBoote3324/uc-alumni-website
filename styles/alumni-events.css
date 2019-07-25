@@ -1,0 +1,67 @@
+﻿/* Whole Page Styling */
+.section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.centerBlock {
+  display: table;
+  margin: 0 auto;
+}
+
+/* Blurb */
+.section .btn{
+    background-color: #CC0011;
+    color: #ffffff;
+    border-style: none;
+}
+
+/* Events by Region Section */
+#region-picker {
+    margin-bottom: 1em;
+    padding-left: 10px;
+}
+
+.nav-pills li.active a,
+.nav-pills li.active a:focus {
+    background-color: #CC0011;
+}
+
+.nav-pills li a {
+    color:#000000;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.panel-footer p {
+    text-align: center;
+}
+
+.panel-footer a:hover {
+    background-color: #CC0011;
+    color: #FFFFFF;
+    border-color: #CC0011;
+}
+
+.panel-body img {
+    margin-bottom: 1em;
+}
+.events-section{
+    padding-bottom: 1em;
+}
+
+.panel-default {
+    margin-bottom: 1em;
+}

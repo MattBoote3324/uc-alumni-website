@@ -1,0 +1,54 @@
+﻿/* Page Wide */
+
+.section-content {
+	text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+/* Regions Section */
+.country-img{
+	border : 5px transparent solid;
+}
+
+.country-img:hover{
+	border-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.center-block {
+  display: table;
+  margin: 0 auto;
+}
+
+/* Map */
+#map {
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#image-map {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* Notable Alumni */
+#youtube-video {
+    width: 408px;
+    height: 270px;
+}
+
+#uc-legends{
+
+    padding-bottom: 25px;
+}
+
+.legend-text{
+    text-align: center;
+}

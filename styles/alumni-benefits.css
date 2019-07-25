@@ -1,0 +1,157 @@
+/* Whole Page Styling */
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.section-outer {
+  width: 100%;
+}
+
+.row{
+  margin-right: 0px;
+
+}
+
+.btn {
+    background-color: #CC0011;
+    opacity: 0.8;
+    border: none;
+    color: #ffffff;
+    font-size: 2em;
+    height: 50px;
+    display: block;
+}
+
+.centerBlock {
+  display: table;
+  margin: 0 auto;
+}
+
+
+/* Networks Section */
+#networks-div {
+      background-color: #F5F5F5;
+      text-align: center;
+}
+
+.collapse{
+  border-width: medium;
+  border-color: #CC0011;
+  background: #F5F5F5;
+}
+
+#networks-countries-div {
+    width: 80%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    background-color: #F5F5F5;
+}
+
+.silhouette{
+    cursor: pointer;
+    text-align: center;
+    border: 5px solid transparent;
+}
+
+.silhouette:hover{
+    border-color: #CC0011;
+}
+
+.networks-thumbnail h2 {
+  color: #000000;
+}
+
+/* Publications Section */
+#publications-container {
+  padding-top: 2em;
+}
+
+.chronicle-content{
+  height: 314px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.chronicle-image{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#chronicle-text{
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.link {
+  margin-top: 1em;
+}
+
+/* Gifts and Memrobilia Section */
+#gifts-div {
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+#thumb-gifts-div {
+    margin-top: 2em;
+}
+
+.img-thumbnail {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+.img-thumbnail:hover{
+  border-color: #CC0011;
+
+}
+
+/* Memberships Section */
+.side-by-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#canterbury-club-container {
+    text-align: left;
+}
+
+#rec-centre-container {
+    text-align: center;
+}
+
+.mem-img{
+  padding-top :20px;
+}
+
+.left-aligned{
+  text-align: left;
+}
+
+.side-by-side h3{
+  align-self: left;
+}

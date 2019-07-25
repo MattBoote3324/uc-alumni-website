@@ -1,0 +1,36 @@
+
+/*Whole page styling*/
+
+.container {
+    width: 100%;
+    padding: 0px;
+}
+
+#login-desc {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-top: 0.5em;
+}
+
+#log-out-container {
+    margin-bottom: 3em;
+}
+
+.content-panel {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+}

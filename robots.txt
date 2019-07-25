@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: README.md
+Disallow: /img/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /fonts/
+Disallow: Validation of HTML and CSS.docx
+Disallow: /SQL/
+Disallow: /php/
+Sitemap: sitemap.xml

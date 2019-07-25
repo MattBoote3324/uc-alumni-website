@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Page title and metadata tags -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>University of Canterbury Alumni Home Page</title>
+    <meta name="description" content="Find out about Alumni events, benefits, networking and more." />
+    <meta name="keywords" content="University of Canterbury, UC Alumni, Alumni" />
+
+    <!-- Link to JQuery -->
+    <script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <!-- Link to my homepage stylesheet -->
+    <link type="text/css" rel="stylesheet" href="styles/global-style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/alumni-home.css" />
+</head>
+
+<body>
+
+    <!-- Page Banner -->
+    <div class="panel panel-default" id="banner">
+        <div id="banner-content">
+            <img id="banner-logo" src="img/shared/uc-banner-logo.png" alt="University of Canterbury"/>
+            <h1 id="banner-heading">University of Canterbury Alumni</h1>
+        </div>
+    </div>
+
+    <div class="container" id="content-container">
+        <div class="row">
+            <!-- Side Menu Column -->
+            <div class="col-lg-2 col-md-12 col-sm-12 responsive-nav">
+                <!-- Menu Header, Only visible when collapsed -->
+                <div id="nav-container">
+                    <div class="navbar-header list-group-item-success">
+                        <button type="button" class="navbar-toggle menu-btn" data-toggle="collapse" data-target="#MainMenu">
+                            <span class="icon-bar menu-btn-bar"></span>
+                            <span class="icon-bar menu-btn-bar"></span>
+                            <span class="icon-bar menu-btn-bar"></span>
+                        </button>
+                        <div class = "navbar-toggle navbar-brand">
+                            <img id = "nav-image" src = "img/shared/uc-alumni-logo-red.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-nav collapse navbar-collapse" id="MainMenu">
+                    <div class="list-group panel">
+                        <a href="home.html" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Home</a>
+
+                        <a href="events.html" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Events</a>
+
+                        <a href="#nav-benefits" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">Benefits</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-benefits">
+                            <a href="benefits.html" class="sub-menu list-group-item sm-padding-left">Networks</a>
+                            <a href="benefits.html#publications" class="sub-menu list-group-item sm-padding-left">Publications</a>
+                            <a href="benefits.html#gifts-div" class="sub-menu list-group-item sm-padding-left">Gifts and Memorabilia</a>
+                            <a href="benefits.html#memberships" class="sub-menu list-group-item sm-padding-left">Memberships</a>
+                        </div>
+
+                        <a href="#nav-worldwide" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">Alumni Worldwide</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-worldwide">
+                            <a href="worldwide.html" class="sub-menu list-group-item sm-padding-left">Where Are They Now?</a>
+                            <a href="worldwide.html#uc-legends" class="sub-menu list-group-item sm-padding-left">UC Legends</a>
+                        </div>
+
+                        <a href="#nav-about-us" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">About Us</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-about-us">
+                            <a href="about.html" class="sub-menu list-group-item sm-padding-left">Our Mission</a>
+                            <a href="about.html#team-section" class="sub-menu list-group-item sm-padding-left">Our Team</a>
+                            <a href="about.html#faq-section" class="sub-menu list-group-item sm-padding-left">FAQ</a>
+                            <a href="about.html#contact-section" class="sub-menu list-group-item sm-padding-left">Contact Us</a>
+                            <a href="about.html#find-us-section" class="sub-menu list-group-item sm-padding-left">Find Us</a>
+                        </div>
+                        <a href="login.php" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Login</a>
+                        <a href="portal.php" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Alumni Portal</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <div class="col-lg-10 col-md-12 col-sm-12 no-padding">
+                <!-- Home Carousel -->
+                <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active carousel-image" id="slide-one">
+                            <div class="flex-container container">
+                                <div class="row carousel-row">
+                                    <div class="logo-container col-sm-6">
+                                        <img class="logo" src="img/shared/uc-alumni-logo-white.png" alt="University of Canterbury Alumni" />
+                                    </div>
+                                    <div class="btn-container col-sm-6">
+                                        <a href="http://www.canterbury.ac.nz/alumni/uc-foundation.shtml" class="btn btn-default carousel-btn">SUPPORT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item carousel-image" id="slide-two">
+                            <div class="flex-container container">
+                                <div class="row carousel-row">
+                                    <div class="logo-container col-sm-6">
+                                        <img class="logo" src="img/shared/uc-alumni-logo-white.png" alt="University of Canterbury Alumni" />
+                                    </div>
+                                    <div class="btn-container col-sm-6">
+                                        <a href="events.html" class="btn btn-default carousel-btn">EVENTS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item carousel-image" id="slide-three">
+                            <div class="flex-container container">
+                                <div class="row carousel-row">
+                                    <div class="logo-container col-sm-6">
+                                        <img class="logo" src="img/shared/uc-alumni-logo-white.png" alt="University of Canterbury Alumni" />
+                                    </div>
+                                    <div class="btn-container col-sm-6">
+                                        <a href="benefits.html" class="btn btn-default carousel-btn">NETWORK</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#homeCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="right carousel-control" href="#homeCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div id="upcoming-events">
+                    <h2>Upcoming Events</h2>
+                    <div class="container-fluid text-center" id="event-panel">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="thumbnail event-thumbnail">
+                                    <img class="img-responsive" src="img/events/san-francisco-bridge.jpg" alt="Placeholder Image"/>
+                                    <h5>
+                                    <a class="event-link" href="events.html#north-america">
+                                        <strong>San Francisco Alumni Function</strong>
+                                    </a>
+                                    </h5>
+                                    <p>30th Sept 2016: 6.30pm - 8.30pm</p>
+                                    <p>The Diplomat Club, Fairmont San Francisco, Atop Nob Hill, 950 Mason Street</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="thumbnail event-thumbnail">
+                                    <img class="img-responsive" src="img/events/washington-monument.jpg" alt="Placeholder Image"/>
+                                    <h5>
+                                    <a class="event-link" href="events.html#north-america">
+                                        <strong>Washington D.C. Alumni Function</strong>
+                                    </a>
+                                    </h5>
+                                    <p>6th Oct 2016: 6.30pm - 8.30pm</p>
+                                    <p>New Zealand Ambassador's Residence, 27 Observatory Circle NW, Washington DC 20008</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="link-container">
+                        <!-- TODO: Add page link -->
+                        <a class="btn btn-default" href="events.html">Find More Events...</a>
+                    </div>
+                </div>
+
+                <!-- Benefits and Worldwide -->
+                <div class="container-fluid" id="side-by-side-container">
+                    <div class="row">
+                        <!-- Benefits -->
+                        <div id="benefits-container" class="col-sm-6 side-by-side">
+                            <div class="content">
+                                <h2>Benefits</h2>
+                                <p>As an alumni of UC, you are entitled to more benefits than you realise! Learn about the opportunity to
+                                    join the Univeristy of Canterbury Club at Ilam Homestead and more below.
+                                </p>
+                                <div class="link-container">
+                                    <!-- TODO: Add page link -->
+                                    <a class="btn btn-default" href="benefits.html">Learn More About Alumni Benefits...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Alumni Worldwide -->
+                        <div id="worldwide-container" class="col-sm-6 side-by-side">
+                            <div class="content">
+                                <h2>Alumni Worldwide</h2>
+                                <p>The University of Canterbury has a network of over 120,000 alumni living and working all over the world.
+                                    Check out our alumni map and see how many of our graduates are living near you!
+                                </p>
+                                <div class="link-container">
+                                    <a class="btn btn-default" href="worldwide.html">Learn More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+		<div class="row text-center container-fluid footer-content">
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Alumni</h2>
+					</li>
+					<li>
+						<h4><a href="home.html">Home</a></h4>
+					</li>
+					<li>
+						<h4><a href="benefits.html">Benefits</a></h4>
+					</li>
+					<li>
+						<h4><a href="events.html">Events</a></h4>
+					</li>
+					<li>
+						<h4><a href="worldwide.html">Worldwide</a></h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Useful Links</h2>
+					</li>
+					<li>
+						<h4><a href="http://www.canterbury.ac.nz/">University of Canterbury</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://library.canterbury.ac.nz/">Library</a></h4>
+					</li>
+					<li>
+						<h4><a href="https://www.keanewzealand.com/">KEA NZ</a></h4>
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2><a href="about.html">About Us</a></h2>
+					</li>
+					<li>
+						<h4><a href="about.html">What we do</a></h4>
+					</li>
+					<li>
+						<h4><a href="about.html#team-section">Our People</a></h4>
+					</li>
+					<li>
+						<h4><a href="about.html#contact-section">Contact Us</a></h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Stay in Touch</h2>
+					</li>
+					<li class="social-icons-li flex-container-home">
+						<ul class="social">
+							<li>
+								<a href="https://www.facebook.com/UCAlumniCommunity"><img class="social-icon" src="img/shared/facebook.png" alt="facebook-icon" /></a>
+								<i class=" fa fa-facebook"></i>
+							</li>
+							<li>
+								<a href="https://twitter.com/ucnz"><img class="social-icon" src="img/shared/twitter.png" alt="twitter-icon" /></a>
+                                <i class="fa fa-twitter"></i>
+                            </li>
+							<li>
+								<a href="https://www.youtube.com/user/UniversityCanterbury"><img class="social-icon" src="img/shared/youtube.png" alt="youtube-icon" /></a>
+                                <i class="fa fa-youtube"></i>
+                            </li>
+							<li>
+								<a href="http://www.linkedin.com/company/university-of-canterbury"><img class="social-icon" src="img/shared/linkedin.png" alt="linkedin-icon" /></a>
+                                <i class="fa fa-linkedin"></i>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id = "copyright-container">
+			<div class = "row">
+				<div class = "col-sm-6">
+					<ul>
+						<li id = "copyright-text">©University of Canterbury</li>
+					</ul>
+				</div>
+				<div class = "col-sm-6">
+					<ul class = "links">
+						<li><a href = "http://www.canterbury.ac.nz/help/legal.shtml">Copyright and Disclaimer</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/privacy/">Privacy</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/contact/">Feedback</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/">Help and Accessibility</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/a-z.shtml">A-Z of University Websites</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</html>

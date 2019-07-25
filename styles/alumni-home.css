@@ -1,0 +1,187 @@
+/* Navigation Bar */
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#content-container{
+    margin-top:0px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+.no-padding{
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+/* Welcome Section Carousel */
+#homeCarousel {
+    margin-bottom: 0px;
+}
+
+.carousel-image {
+    height: 576px;
+    max-height: 576px;
+    background-size: cover;
+}
+
+#slide-one {
+    background-image: url("../img/home/alumni-support.jpg");
+}
+
+#slide-two {
+    background-image: url("../img/home/alumni-event.jpg");
+}
+
+#slide-three {
+    background-image: url("../img/home/alumni-connect.jpg");
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    height: 576px;
+    justify-content: center;
+}
+
+.carousel-btn {
+    background-color: #CC0011;
+    opacity: 0.8;
+    border: none;
+    color: #FFFFFF;
+    font-size: 3em;
+    height: 72px;
+    width: 240px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin: auto;
+}
+
+.btn-container {
+    margin-top: 25px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
+.carousel-row {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Carousel Fade Animation CSS */
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/* Upcoming Events */
+#event-panel {
+    width: 80%;
+    align-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#upcoming-events {
+    background-color: #F5F5F5;
+    padding-top: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.event-thumbnail {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thumbnail img {
+    width: 250px;
+    height: 150px;
+    border-radius: 2px;
+}
+
+.link-container {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+#upcoming-events h2 {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.event-link, .event-link:hover, event-link:after {
+    color: #000000;
+}
+
+/* Benefits and Alumni Worldwide Section */
+#side-by-side-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.side-by-side {
+    height: 400px;
+    padding-left: 0px;
+}
+
+#benefits-container {
+    background-image: url("../img/home/ilam-homestead.jpg");
+    background-size: cover;
+}
+
+#worldwide-container {
+    background-image: url("../img/home/world-map.jpg");
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    bottom: 0px;
+    background-color: #505050;
+    opacity: 0.8;
+    padding: 0.5em;
+    height: 50%;
+}
+
+.side-by-side h2,
+.side-by-side p {
+    color: #FFFFFF;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}

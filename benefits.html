@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang ="en">
+
+<head>
+  <!-- Page title and metadata tags -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>University of Canterbury Alumni Benefits Page</title>
+  <meta name="description" content="Learn about all of the benefits UC alumni get!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="University of Canterbury, Alumni Benefits, UC Alumni, Benefits, Alumni" />
+  <!--JQuery-->
+  <script type = "text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+  <script type = "text/javascript" src ="scripts/bootstrap.min.js"></script>
+
+  <!--Link to benefits css  and glocal style-->
+  <link rel="stylesheet" type="text/css" href="styles/global-style.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/alumni-benefits.css"/>
+</head>
+
+<body>
+  <!-- Welcome Banner -->
+    <div class="panel panel-default" id="banner">
+        <div id="banner-content">
+            <img id="banner-logo" src="img/shared/uc-banner-logo.png" alt="University of Canterbury"/>
+            <h1 id="banner-heading">Benefits</h1>
+        </div>
+    </div>
+    <div class="container" id="content-container">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 col-sm-12 responsive-nav text-align-center">
+                <!-- Menu Header, Only visible when collapsed -->
+                <div id="nav-container">
+                    <div class="navbar-header list-group-item-success">
+                        <button type="button" class="navbar-toggle menu-btn" data-toggle="collapse" data-target="#MainMenu">
+                            <span class="icon-bar menu-btn-bar"></span>
+                            <span class="icon-bar menu-btn-bar"></span>
+                            <span class="icon-bar menu-btn-bar"></span>
+                        </button>
+
+                        <div class = "navbar-toggle navbar-brand">
+                            <img id = "nav-image" src = "img/shared/uc-alumni-logo-red.png"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-nav collapse navbar-collapse" id="MainMenu">
+                    <div class="list-group panel">
+                        <a href="home.html" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Home</a>
+
+                        <a href="events.html" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Events</a>
+
+                        <a href="#nav-benefits" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">Benefits</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-benefits">
+                            <a href="benefits.html" class="sub-menu list-group-item sm-padding-left">Networks</a>
+                            <a href="benefits.html#publications" class="sub-menu list-group-item sm-padding-left">Publications</a>
+                            <a href="benefits.html#gifts-div" class="sub-menu list-group-item sm-padding-left">Gifts and Memorabilia</a>
+                            <a href="benefits.html#memberships" class="sub-menu list-group-item sm-padding-left">Memberships</a>
+                        </div>
+
+                        <a href="#nav-worldwide" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">Alumni Worldwide</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-worldwide">
+                            <a href="worldwide.html" class="sub-menu list-group-item sm-padding-left">Where Are They Now?</a>
+                            <a href="worldwide.html#uc-legends" class="sub-menu list-group-item sm-padding-left">UC Legends</a>
+                        </div>
+
+                        <a href="#nav-about-us" class="title list-group-item list-group-item-success sm-padding-left" data-toggle="collapse" data-parent="#MainMenu">
+                            <p class="reduce-width">About Us</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <div class="collapse" id="nav-about-us">
+                            <a href="about.html" class="sub-menu list-group-item sm-padding-left">Our Mission</a>
+                            <a href="about.html#team-section" class="sub-menu list-group-item sm-padding-left">Our Team</a>
+                            <a href="about.html#faq-section" class="sub-menu list-group-item sm-padding-left">FAQ</a>
+                            <a href="about.html#contact-section" class="sub-menu list-group-item sm-padding-left">Contact Us</a>
+                            <a href="about.html#find-us-section" class="sub-menu list-group-item sm-padding-left">Find Us</a>
+                        </div>
+                        <a href="login.php" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Login</a>
+
+                        <a href="portal.php" class="title list-group-item list-group-item-success sm-padding-left" data-parent="#MainMenu">Alumni Portal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-12 col-sm-12 no-padding">
+
+                <!-- Alumni Networks-->
+                <div class = "bg-grey">
+                    <div id="networks-div" class="section">
+                      <h2>Alumni Networks</h2>
+                      <p class="lrg-text container-fluid">
+                        Wherever in the world you may find yourself, you will find fellow UC
+                      alumni living and working near you. Our goal is to stay connected with you
+                      and help you connect with fellow alumni, wherever you are. You can join
+                      over 2000 other alumni on our UC alumni LinkedIn Group to extend your
+                      professional network globally. </p>
+                      <p class="lrg-text container-fluid">
+                        If you would like to update your contact details, or are interested in starting up a network in your area please email
+                        <a href="mailto:alumni@canterbury.ac.nz">alumni@canterbury.ac.nz</a>.
+                      </p>
+                    <p class="lrg-text container-fluid">Click on one of the regions below to find out who runs your local network!</p>
+                      <div class="row text-center container-fluid" id="networks-countries-div">
+                        <div class="col-sm-3">
+                          <div class="network-image-containter">
+                            <img data-toggle="collapse" data-target="#nz-networks" class="img-circle silhouette img-responsive" src="img/benefits/nz.png" alt = "new-zealand-image"/>
+                          </div>
+                          <h2>New Zealand</h2>
+
+                          <div id="nz-networks" class="collapse network-collapse">
+
+                              <h3>Christchurch</h3>
+                              <p>Jonathan Reddiford - Acting President</p>
+                              <a href="mailto:riddo@xtra.co.nz">riddo@xtra.co.nz</a>
+
+                              <h3>Wellington</h3>
+                              <p>Mr Brian Lynch</p>
+                              <a href="mailto:brianlynch344@gmail.com">brianlynch344@gmail.com</a>
+
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="network-image-containter">
+                            <img data-toggle="collapse" data-target="#china-networks" class="img-circle silhouette img-responsive" src="img/benefits/china.png" alt = "china-image"/>
+                          </div>
+                          <h2>China</h2>
+
+                          <div id="china-networks" class="collapse">
+
+                              <h3>Beijing</h3>
+                              <p>Ms Iris Hao</p>
+                              <a href="mailto:irishao@hotmail.com">irishao@hotmail.com</a>
+
+                              <h3>Hong Kong</h3>
+                              <p>Dr Richard Tan</p>
+                              <a href="mailto:rahk.tan@gmail.com">rahk.tan@gmail.com</a>
+
+                              <h3>Shanghai</h3>
+                              <p>Mr Alex Liu</p>
+                              <a href="mailto:alexliu@wj.gov.cn">alexliu@wj.gov.cn</a>
+
+                              <h3>Wuhan</h3>
+                              <p>Mr Tim Yuan</p>
+                              <a href="mailto:yheng63@hotmail.com">yheng63@hotmail.com</a>
+
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="network-image-containter">
+                            <img data-toggle="collapse" data-target="#uk-networks" class="img-circle silhouette img-responsive" src="img/benefits/united-kingdom.png" alt = "uk-image"/>
+                          </div>
+                          <h2>UK</h2>
+
+                          <div id="uk-networks" class="collapse">
+
+                              <h3>London</h3>
+                              <p>Dr Alene Wilton</p>
+                              <a href="mailto:alenewilton@hotmail.com">alenewilton@hotmail.com</a>
+
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="network-image-containter">
+                            <img data-toggle="collapse" data-target="#malaysia-networks" class="img-circle silhouette img-responsive" src="img/benefits/malaysia.png" alt = "malaysia-image"/>
+                          </div>
+                          <h2>Malaysia</h2>
+                          <div id="malaysia-networks" class="collapse">
+
+                              <h3>Kuala Lumpur</h3>
+                              <p>Mr Richard Tankersley</p>
+                              <p>President, UC Alumni Malaysia (UCAM)</p>
+                              <a href="mailto:ucam@ucam.org.my">ucam@ucam.org.my</a>
+                              <p>Tel: <a href="tel:+60321410822">+60 3 2141 0822</a></p>
+
+
+
+                              <h3>Sibu</h3>
+                              <p>Mr Tony Wong Siew Tung</p>
+                              <a href="mailto:wongmoo@hotmail.com">wongmoo@hotmail.com</a>
+                              <p>Tel: <a href="tel:+60168941326">+60 16 8941 326</a></p>
+
+
+
+                              <h3>Kuching</h3>
+                              <p>Ir Alex Ting</p>
+                              <a href="mailto:wts@tm.net.my">wts@tm.net.my</a>
+
+
+
+                              <h3>Miri</h3>
+                              <p>Mr John Leong</p>
+                              <a href="mailto:johngra@streamyx.com">johngra@streamyx.com</a>
+
+
+
+                              <h3>Kota Kinabalu</h3>
+                              <p>Ir Patrick Chu</p>
+                              <a href="mailto:patjyc@gmail.com">patjyc@gmail.com</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Chronicle Magazine <-->
+                <div class="section-outer bg-white" id = "publications">
+                  <div class="section text-center">
+                    <h2>Publications</h2>
+                    <div class="row" id="publications-container">
+                      <div class="col-sm-5 chronicle-image">
+                        <div id="magazine-img-content" class="flex-container">
+                          <a href="http://www.comsdev.canterbury.ac.nz/">
+                            <img class="img-responsive img-rounded" src="img/benefits/chronicle.jpg" alt="Chronicle Magazine"/>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div id="chronicle-text" class="side-by-side">
+                          <p class="lrg-text justified">The university has many publications for alumni to read, including the official
+                            calendar, annual report and other events and planning documents. On top of this the Communications Department
+                            create the Chronicle Magazine to publish all the latest news and stories about what's going on at UC.
+                          </p>
+                          <p class="lrg-text justified">
+                            Click the Chronicle Magazine cover to visit the UC Communications website or the link below to find more
+                            publications on the UC Publications website.
+                          </p>
+                          <div class="centerBlock link">
+                            <a href="http://www.canterbury.ac.nz/publications/staff.shtml" class="btn btn-default">UC Publications</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gifts and Memorabilia -->
+                <div class="bg-grey">
+                    <div id="gifts-div" class="section">
+                      <h2>Gifts and Memorabilia</h2>
+                        <p>University of Canterbury partner companies offer products for alumni. <br> Click an image below to veiw!</p>
+                      <div class="row text-center container-fluid" id="thumb-gifts-div">
+
+
+                        <div class="col-sm-3">
+                          <div class="gift-image-containter">
+                            <img data-toggle="collapse" data-target="#ubs-gift" class="img-thumbnail img-responsive" src="img/benefits/ubs.jpg" alt = "ubs-gift"/>
+                          </div>
+                          <h3>University Bookshop (UBS)</h3>
+                          <div id="ubs-gift" class="collapse">
+                            <p>UBS Canterbury is the home of all University of Canterbury merchandise, from Graduation Teddy Bears to UCan T Shirts.</p>
+                            <p> You can purchase these gifts online and at Graduation ceremonies. You can also purchase these items on-campus at
+                              the University Bookshop</p>
+                            <a href="http://ubscan.e-web.com.au/uc-merchandise/uc-merchandise">Shop at the UBS</a>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="gift-image-containter">
+                            <img data-toggle="collapse" data-target="#portrait-gift" class="img-thumbnail img-responsive" src="img/benefits/graduation.jpg" alt = "portrait"/>
+                          </div>
+                          <h3>Graduate photography</h3>
+                          <div id="portrait-gift" class="collapse">
+                            <p>Linton Photography is at UC's graduation ceremonies and will take portraits at the graduation venue after the ceremony.</p>
+                            <p>You can also book to have a private sitting - most regalia is available</p>
+                            <p>Tel: <a href="tel:0800100757">0800 100 757</a> or <a href="tel:006433396699">(03) 339 6699</a></p>
+                            <p>Email: <a href="mailto:info@eventphoto.co.nz">info@eventphoto.co.nz</a></p>
+                            <a href="http://www.lintonphoto.com/eventphoto/gallerystore/">Linton Photography website</a>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="gift-image-containter">
+                            <img data-toggle="collapse" data-target="#frames-gift" class="img-thumbnail img-responsive" src="img/benefits/frames.jpg" alt = "frames"/>
+                          </div>
+                          <h3>Degree frames</h3>
+                          <div id="frames-gift" class="collapse">
+                            <p>Jon and Cecelia Yon from Now and Forever Frames supply degree frames in a range of timbers and sizes.</p>
+                            <p> See them at your graduation ceremony or visit their shop.</p>
+                            <p>135 Farrington Avenue,</p>
+                            <p>Bishopdale,</p>
+                            <p>Christchurch.</p>
+                            <p>Tel: <a href="tel:006433592525">(03) 359 2525</a></p>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="gift-image-containter">
+                            <img data-toggle="collapse" data-target="#rings-gift" class="img-thumbnail img-responsive" src="img/benefits/rings.jpg" alt = "class-rings"/>
+                          </div>
+                          <h3>Class Rings</h3>
+                          <div id="rings-gift" class="collapse">
+                            <p>UC alumni and students intending to graduate from UC are eligible to purchase an official UC class ring.</p>
+                            <p>There are stands at graduation ceremonies where you can purchase the rings as well.</p>
+                            <p>Visit the <a href="http://www.honourrings.co.nz/class-rings/university-of-canterbury">Honour Rings website</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Memberships and Publications -->
+                <div class="container bg-white text-center section-outer" id = "memberships">
+                  <div class="section">
+                    <h2>Memberships</h2>
+                    <div class="row section" id="canterbury-club-div">
+                      <div class="col-sm-6" id="canterbury-club-container">
+                        <div class="side-by-side">
+                          <img class="img-rounded img-responsive mem-img" src="img/home/ilam-homestead.jpg" alt="Ilam Homestead - University of Canterbury Club"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="side-by-side">
+                          <h3>Canterbury Club</h4>
+                          <p class = "left-aligned">
+                            Coming soon will be an opportunity to join the newly
+                            rebranded University of Canterbury Club at Ilam Homestead, a privalige previously reserved only for staff at the
+                            univeristy. Keep an eye out here for more information!
+                          </p>
+                          <p class = "left-aligned">
+                            Click the link below to visit the Canterbury Club website!
+                          </p>
+                          <a href="http://www.canterbury.ac.nz/publications/staff.shtml" class="btn btn-default link">Canterbury Club</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row section" id="rec-centre-div">
+                      <div class="col-sm-6" id="rec-centre-container">
+                        <div class="side-by-side">
+                          <img class="img-rounded img-responsive mem-img" src="img/benefits/rec-centre.jpg" alt="Recreation Centre - University of Canterbury Rec Centre"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="side-by-side">
+                          <h3>Recreation Centre</h4>
+                          <p class="left-aligned">
+                            As alumni of Canterbury University you are eligible to apply for a membership at the UC Rec Centre! You can sign up for
+                            special classes and much more!
+                          </p>
+                          <p>Click the link below to visit the UC Recreation Centre website to See more information!</p>
+                          <a href="http://www.phed.canterbury.ac.nz/" class="btn btn-default link">Rec Centre</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row section" id="library-div">
+                      <div class="col-sm-6" id="library-container">
+                        <div class="side-by-side">
+                          <img class="img-rounded img-responsive mem-img" src="img/benefits/library.jpg" alt="James Hight Library- Puaka James Hight"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="side-by-side">
+                          <h3>UC Library</h4>
+                          <p class="left-aligned">
+                            As an alumni of UC, you're entitled to special memberships with the university! This includes a 50% discount off
+                            of the University of Canterbury library membership fee. 
+                          </p>
+                          <p>Click the link below to visit the UC Library website and sign up now!</p>
+                          <a href="http://library.canterbury.ac.nz/" class="btn btn-default link">UC Library</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Footer -->
+
+</body>
+<footer>
+		<div class="row text-center container-fluid footer-content">
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Alumni</h2>
+					</li>
+					<li>
+						<h4><a href="home.html">Home</a></h4>
+					</li>
+					<li>
+						<h4><a href="benefits.html">Benefits</a></h4>
+					</li>
+					<li>
+						<h4><a href="events.html">Events</a></h4>
+					</li>
+					<li>
+						<h4><a href="worldwide.html">Worldwide</a></h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Useful Links</h2>
+					</li>
+					<li>
+						<h4><a href="http://www.canterbury.ac.nz/">University of Canterbury</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://library.canterbury.ac.nz/">Library</a></h4>
+					</li>
+					<li>
+						<h4><a href="https://www.keanewzealand.com/">KEA NZ</a></h4>
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2><a href="about.html">About Us</a></h2>
+					</li>
+					<li>
+						<h4><a href="about.html">What we do</a></h4>
+					</li>
+					<li>
+						<h4><a href="about.html#team-section">Our People</a></h4>
+					</li>
+					<li>
+						<h4><a href="about.html#contact-section">Contact Us</a></h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<ul>
+					<li>
+						<h2>Stay in Touch</h2>
+					</li>
+					<li class="social-icons-li flex-container">
+						<ul class="social">
+							<li>
+								<a href="https://www.facebook.com/UCAlumniCommunity"><img class="social-icon" src="img/shared/facebook.png" alt="facebook-icon" /></a>
+								<i class=" fa fa-facebook"></i>
+							</li>
+							<li>
+								<a href="https://twitter.com/ucnz"><img class="social-icon" src="img/shared/twitter.png" alt="twitter-icon" /></a>
+                                <i class="fa fa-twitter"></i>
+                            </li>
+							<li>
+								<a href="https://www.youtube.com/user/UniversityCanterbury"><img class="social-icon" src="img/shared/youtube.png" alt="youtube-icon" /></a>
+                                <i class="fa fa-youtube"></i>
+                            </li>
+							<li>
+								<a href="http://www.linkedin.com/company/university-of-canterbury"><img class="social-icon" src="img/shared/linkedin.png" alt="linkedin-icon" /></a>
+                                <i class="fa fa-linkedin"></i>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id = "copyright-container">
+			<div class = "row">
+				<div class = "col-sm-6">
+					<ul>
+						<li id = "copyright-text">©University of Canterbury</li>
+					</ul>
+				</div>
+				<div class = "col-sm-6">
+					<ul class = "links">
+						<li><a href = "http://www.canterbury.ac.nz/help/legal.shtml">Copyright and Disclaimer</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/privacy/">Privacy</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/contact/">Feedback</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/">Help and Accessibility</a> | </li>
+						<li><a href = "http://www.canterbury.ac.nz/help/a-z.shtml">A-Z of University Websites</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>
